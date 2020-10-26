@@ -1,0 +1,45 @@
+h1.text {
+    font-weight: 600;
+    font-size: var(--title-fs);
+    line-height: 1.1;
+}
+h2.text {
+    font-weight: 600;
+    font-size: var(--title-2-fs);
+    line-height: 1.1;
+    margin-bottom: 32px;
+}
+h3.text {
+    font-weight: 600;
+    font-size: var(--title-3-fs);
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+h2.text:last-child {
+    margin-bottom: 0;
+}
+p.text {
+    font-size: var(--text-fs);
+    margin-bottom: 48px;
+}
+
+.text_center {
+    text-align: center;
+}
+
+.text_gradient {
+    background: linear-gradient(82.6deg, #00B4FF 0.32%, #00CC00 100.39%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 414px) {
+    h2.text {
+        margin-bottom: 16px;
+    }
+    p.text {
+        margin-bottom: 24px;
+    }
+
+}
+

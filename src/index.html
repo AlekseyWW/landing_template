@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__container container">
+            <div class="header__logo">
+                <img src="./img/logo.svg" alt="Сбер">
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="section section_top">
+            <div class="container">
+                <div class="top">
+                    <div class="top__image"><img src="./img/doctors.png" alt="Врачи"></div>
+                    <div class="top__text">
+                        <p class="text">{{ topSection.date }}</p>
+                        <h1 class="text">{{ topSection.title }}</h1>
+                        <button class="button">{{ topSection.buttonText }}</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section_artists">
+            <div class="container">
+                <div class="title slideup">
+                    <h2 class="text text_center">{{ artistsSection.title }}</h2>
+                </div>
+                <div class="row">
+
+                    <% artistsSection.items.forEach(function (artist) { %>
+
+                        <article class="row__item article">
+                            <img class="article__image article__image_circle" src="{{ artist.img }}" alt="{{ artist.name }}">
+                            <p class="article__label">{{ artist.name }}</p>
+                        </article>
+
+                    <% }) %>
+
+                </div>
+                <div class="more">
+                    <p>Список артистов еще дополняется</p>
+                </div>
+            </div>
+        </section>
+        <section class="section section_image">
+            <div class="container">
+                <div class="row row_center">
+                    <div class="row__item">
+                        <h2 class="text">{{ imageSection.title }}</h2>
+                        <p class="text">{{ imageSection.caption }}</p>
+                        <button class="button">{{ topSection.buttonText }}</button>
+                    </div>
+                    <div class="row__item">
+                        <div class="gradient">
+                            <img src="./img/mask.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section_video">
+            <div class="container">
+                <div class="title">
+                    <h2 class="text text_center text_gradient">{{ videoSection.title }}</h2>
+                    <p class="text text_center">{{ videoSection.caption }}</p>
+                </div>
+                <div class="video">
+                    <div class="video__container">
+                        <!-- <video> -->
+                        <iframe
+                            title="Трансляция"
+                            src="{{ videoSection.videoLink }}"
+                            frameborder="0"
+                            id="iframe"
+                            >
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section section_icons gradient_2">
+            <div class="container container_wide">
+                <div class="title">
+                    <h2 class="text text_center">{{ iconsSection.title }}</h2>
+                </div>
+                <div class="grid ">
+                    <% iconsSection.items.forEach(function (item) { %>
+
+                    <article class="grid__item article" >
+                        <img class="article__image" src="{{item.img}}" alt="{{item.name}}">
+                        <p class="article__label">{{item.name}}</p>
+                        <span class="article__text">{{item.caption}}</span>
+                    </article>
+
+                    <% }) %>
+
+                </div>
+            </div>
+        </section>
+        <section class="section section_graph">
+            <div class="container container_wide">
+                <div class="title title_wide">
+                    <h2 class="text text_center">{{ graphSection.title }}</h2>
+                    <p class="text text_center">{{ graphSection.caption }}</p>
+                </div>
+                <div class="graph">
+                    <img src="./img/graph.png" alt="">
+                    <p class="graph__text">{{ graphSection.note }}</p>
+                </div>
+            </div>
+        </section>
+        <section class="section section_card">
+            <div class="container">
+                <div class="card">
+                    <h3 class="text">{{ card.title }}</h3>
+                    <p class="text">{{ card.caption }}</p>
+                    <button class="button button_shadow">{{ card.buttonText }}</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./js/vendor.min.js" type="text/javascript"></script>
+    <script src="./js/main.min.js" type="text/javascript"></script>
+</body>
+</html>

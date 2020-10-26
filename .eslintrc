@@ -1,0 +1,24 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 7,
+    "sourceType": "module"
+  },
+  "overrides": [
+    {
+      "files": [ "src/**/*.js" ],
+      "rules": {
+        "indent": [
+          "error",
+          4
+        ],
+        "semi": [
+          "error",
+          "never"
+        ],
+        "quotes": [
+          "error", "single"
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+.section {
+    position: relative;
+    padding-top: 224px;
+
+}
+.section_top {
+    padding-top: 0;
+}
+
+.section_image {
+    padding-top: 125px;
+}
+
+@media (max-width: 1150px) {
+    .section {
+        padding-top: 120px;
+
+    }
+}
+@media (max-width: 768px) {
+    .section {
+        padding-top: 80px;
+
+    }
+}
+@media (max-width: 414px) {
+    .section {
+        padding-top: 68px;
+    }
+}

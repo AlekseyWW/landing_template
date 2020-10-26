@@ -1,0 +1,67 @@
+@import './vars';
+@import './components/section';
+@import './components/container';
+@import './components/row';
+@import './components/header';
+@import './components/text';
+@import './components/button';
+@import './components/column';
+
+@import './components/top';
+@import './components/card';
+@import './components/article';
+@import './components/grid';
+@import './components/gradient';
+@import './components/title';
+@import './components/graph';
+@import './components/more';
+@import './components/video';
+
+@font-face {
+    font-family: 'SB Sans Display';
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/SBSansDisplay-Light.otf");
+}
+
+@font-face {
+    font-family: 'SB Sans Display';
+    font-style: normal;
+    font-weight: 600;
+    src: url("../fonts/SBSansDisplay-SemiBold.otf");
+}
+
+@font-face {
+    font-family: 'SB Sans Text';
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/SBSansText-Regular.otf");
+}
+
+@font-face {
+    font-family: 'SB Sans Text';
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/SBSansText-Medium.otf");
+}
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    max-width: 100%;
+    color: var(--text-color);
+    font-family: 'SB Sans Text', sans-serif;
+    background-color: #F9F9F9;
+    overflow-x: hidden;
+}
+

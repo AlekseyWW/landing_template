@@ -1,0 +1,12 @@
+.graph {
+    
+}
+.graph img {
+    display: block;
+}
+.graph__text {
+    font-size: var(--text-fs);
+    line-height: 1.1;
+    opacity: 0.24;
+    font-weight: normal;
+}

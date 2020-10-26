@@ -1,0 +1,43 @@
+.gradient {
+    background-image: url('../img/grad_mask.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+.gradient_2 {
+    padding-bottom: 450px;
+    margin-bottom: -450px;
+}
+.gradient_2:before {
+    max-width: 100%;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 658px;
+    height: 950px;
+    pointer-events: none;
+    background-image: url('../img/grad_2.png');
+    background-position: 0 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.gradient img {
+    width: 586px;
+    display: block;
+    margin-left: auto;
+}
+
+@media (max-width: 768px) {
+    .gradient_2 {
+        padding-bottom: 150px;
+        margin-bottom: -150px;
+    }
+}
+
+@media (max-width: 414px) {
+    .gradient {
+        padding: 0;
+    }
+}

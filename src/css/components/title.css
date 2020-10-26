@@ -1,0 +1,14 @@
+.title {
+    max-width: 860px;
+    margin: 0 auto 48px;
+}
+.title_wide {
+    max-width: none;
+}
+
+@media screen and (max-width: 414px) {
+    .title {
+        max-width: 860px;
+        margin: 0 auto 24px;
+    }
+}
